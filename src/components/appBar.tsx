@@ -2,7 +2,7 @@ import { Button, Navbar, NavbarContent, NavbarItem } from "@nextui-org/react";
 
 export default function AppBar() {
   return (
-    <Navbar className="bg-transparent text-white" isBlurred={false}>
+    <Navbar className="bg-transparent text-white absolute" isBlurred={false}>
       <NavbarContent justify="end">
         <NavbarItem>
           <Button

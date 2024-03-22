@@ -22,9 +22,9 @@ export default function Background(): JSX.Element {
     <Fragment>
       <div
         // ref={backgroundLeft}
-        className="w-1/3 bg-yellow-300 absolute left-0 top-0 bottom-0 z-0 "
+        className="w-1/3 lg:bg-yellow-300 bg-cyan-600  absolute left-0 top-0 bottom-0 z-0 "
       ></div>
-      <div className="w-2/3 bg-orange-400 absolute right-0 top-0 bottom-0 z-0"></div>
+      <div className="w-2/3  bg-pink-600 lg:bg-orange-400 absolute right-0 top-0 bottom-0 z-0"></div>
       {/* <CarouselPagination handleChange={handleChange} /> */}
       <UserTypeCards />
     </Fragment>
