@@ -1,17 +1,8 @@
-import {
-  Button,
-  Navbar,
-  NavbarBrand,
-  NavbarContent,
-  NavbarItem,
-} from "@nextui-org/react";
+import { Button, Navbar, NavbarContent, NavbarItem } from "@nextui-org/react";
 
 export default function AppBar() {
   return (
     <Navbar className="bg-transparent text-white" isBlurred={false}>
-      <NavbarBrand>
-        <p className="text-xl">Akseli Palmer</p>
-      </NavbarBrand>
       <NavbarContent justify="end">
         <NavbarItem>
           <Button
