@@ -14,7 +14,7 @@ export default function CarouselPagination({
       variant="light"
       total={3}
       color="default"
-      className="absolute top-3/4 left-2/3 -translate-x-1/3"
+      className="absolute top-3/4 left-2/3 -translate-x-1/3 z-30 "
       showControls
       disableCursorAnimation
       onChange={handleChange}
