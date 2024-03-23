@@ -15,11 +15,10 @@ export default function TypeCard({
 }: TypeCardProps): JSX.Element {
   return (
     <Card
-      className="bg-transparent w-full border-white text-white"
+      className="bg-transparent w-full lg:border-r-3 border-white text-white"
       isPressable={true}
       onClick={handleClick}
-      key={title}
-      // shadow="none"
+      radius="none"
     >
       <CardBody className="flex flex-row items-center justify-between">
         <div>
