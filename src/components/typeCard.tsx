@@ -25,7 +25,7 @@ export default function TypeCard({
           <p className="text-xl font-bold ">{title}</p>
           <p className="text-lg ">{description}</p>
         </div>
-        {icon("text-2xl ")}
+        <div className="min-w-8 ml-2">{icon("text-2xl")}</div>
       </CardBody>
     </Card>
   );
