@@ -1,4 +1,5 @@
 import { Card, CardBody } from "@nextui-org/react";
+import { Link } from "react-router-dom";
 
 export type TypeCardProps = {
   title: string;
@@ -19,6 +20,8 @@ export default function TypeCard({
       isPressable={true}
       onClick={handleClick}
       radius="none"
+      as={Link}
+      to="../hireme"
     >
       <CardBody className="flex flex-row items-center justify-between">
         <div>
