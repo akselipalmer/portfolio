@@ -10,7 +10,7 @@ export default function Background(): JSX.Element {
   return (
     <Fragment>
       <div className="bg-cyan-600 lg:bg-yellow-300 lg:row-span-4 lg:col-span-1" />
-      <div className="bg-pink-600 lg:bg-orange-400 lg:row-span-4 lg:col-span-2 lg:grid lg:grid-rows-12 lg:grid-cols-6 px-5 md:px-8 lg:px-0 pt-20 lg:pt-0 pb-96 lg:pb-0 ">
+      <div className="bg-pink-600 lg:bg-orange-400 lg:row-span-4 lg:col-span-2 lg:grid lg:grid-rows-12 lg:grid-cols-6 px-5 md:px-8 lg:px-0 pt-20 lg:pt-0 pb-96 md:pb-unit-9xl   lg:pb-0 ">
         <MainText />
         <UserTypeCards />
       </div>
