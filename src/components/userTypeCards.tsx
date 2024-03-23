@@ -19,8 +19,10 @@ const typeButtons: TypeCardProps[] = [
 ];
 
 export default function UserTypeCards(): JSX.Element {
+  // -translate-x-1/3
+  // lg:translate-x-0
   return (
-    <div className="absolute left-1/3 -translate-x-1/3 lg:translate-x-0 top-2/4 w-3/4  lg:left-1/2  lg:w-1/3 flex flex-col gap-5">
+    <div className="flex flex-col gap-5 lg:col-start-2 lg:col-end-6 lg:row-start-8 lg:row-end-12 ">
       {typeButtons.map((cardValues) => (
         <TypeCard {...cardValues} key={cardValues.title} />
       ))}

@@ -1,32 +1,19 @@
 import { Fragment } from "react/jsx-runtime";
-// import { useAnimate } from "framer-motion";
-// import CarouselPagination from "./carouselPagination";
-// import LeftDragDiv from "./leftDragDiv";
 import UserTypeCards from "./userTypeCards";
-// const colors = ["rgb(249, 115, 22)", "rgb(168, 85, 247)", "rgb(250, 204, 21)"];
+import MainText from "./mainText";
 
 export type leftBoxConstraintsProps = {
   leftBoxConstraints: React.MutableRefObject<null>;
 };
 
 export default function Background(): JSX.Element {
-  // const [backgroundLeft, animateBackgroundLeft] = useAnimate();
-
-  // const handleChange = (newVal: number) => {
-  //   const opVal = newVal === 1 ? 0.2 : newVal === 2 ? 0.5 : 1;
-  //   animateBackgroundLeft(backgroundLeft.current, { opacity: opVal });
-  //   return;
-  // };
-
   return (
     <Fragment>
-      <div
-        // ref={backgroundLeft}
-        className="w-1/3 lg:bg-yellow-300 bg-cyan-600  absolute left-0 top-0 bottom-0 z-0 "
-      ></div>
-      <div className="w-2/3  bg-pink-600 lg:bg-orange-400 absolute right-0 top-0 bottom-0 z-0"></div>
-      {/* <CarouselPagination handleChange={handleChange} /> */}
-      <UserTypeCards />
+      <div className="bg-cyan-600 lg:bg-yellow-300 lg:row-span-4 lg:col-span-1" />
+      <div className="bg-pink-600 lg:bg-orange-400 lg:row-span-4 lg:col-span-2 lg:grid lg:grid-rows-12 lg:grid-cols-6 px-4 md:px-8 lg:px-0 pt-20 lg:pt-0 h-full">
+        <MainText />
+        <UserTypeCards />
+      </div>
     </Fragment>
   );
 }
