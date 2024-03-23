@@ -22,7 +22,7 @@ export default function UserTypeCards(): JSX.Element {
   // -translate-x-1/3
   // lg:translate-x-0
   return (
-    <div className="flex flex-col gap-5 lg:col-start-2 lg:col-end-6 lg:row-start-8 lg:row-end-12 ">
+    <div className="flex flex-col gap-5 lg:col-start-2 lg:col-end-6 lg:row-start-8 lg:row-end-12">
       {typeButtons.map((cardValues) => (
         <TypeCard {...cardValues} key={cardValues.title} />
       ))}
