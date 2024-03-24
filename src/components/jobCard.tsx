@@ -22,10 +22,10 @@ const cards: card[] = [
     companyName: "Historic Data",
     jobTitle: "Frontend Developer",
     texts: [
-      "- Brought idea to production in 13 months.",
-      "- Decreased lead time for changes from (4 weeks to less than 1 hour).",
-      "- Increased Deployment Frequency from (1 deployment a month) to (multiple deploys a day).",
-      "-Time to restore a service decreased from (2 weeks to less than 1hour).",
+      "Brought idea to production in 13 months.",
+      "Decreased lead time for changes from (4 weeks to less than 1 hour).",
+      "Increased Deployment Frequency from (1 deployment a month) to (multiple deploys a day).",
+      "Time to restore a service decreased from (2 weeks to less than 1hour).",
     ],
     skills: ["React", "TypeScript", "Testing"],
   },
@@ -82,11 +82,13 @@ export default function JobCard({ currentCard }: JobCardProps): JSX.Element {
       </CardHeader>
       <Divider />
       <CardBody>
-        {texts.map((text) => (
-          <p key={text} className="text-md font-semibold">
-            {text}
-          </p>
-        ))}
+        <div className="flex flex-col flex-wrap">
+          {texts.map((text) => (
+            <p key={text} className="text-md font-semibold">
+              {text}
+            </p>
+          ))}
+        </div>
       </CardBody>
       <Divider />
       <CardFooter>

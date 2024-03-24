@@ -18,13 +18,12 @@ export default function JobHistory(): JSX.Element {
 
   return (
     <div>
-      <Card className="mt-5">
+      <Card>
         <CardHeader>
-          <h1 className=" text-3xl">Job History</h1>
+          <h3 className="text-3xl">Job History</h3>
         </CardHeader>
         <CardBody>
           <Table
-            className=""
             color="primary"
             selectionMode="single"
             selectedKeys={selectedKeys}
