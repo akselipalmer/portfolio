@@ -23,10 +23,10 @@ const cards: card[] = [
     companyName: "Historic Data",
     jobTitle: "Frontend Developer",
     texts: [
-      "Brought idea to production in 13 months.",
-      "Decreased lead time for changes from (4 weeks to less than 1 hour).",
-      "Increased Deployment Frequency from (1 deployment a month) to (multiple deploys a day).",
-      "Time to restore a service decreased from (2 weeks to less than 1hour).",
+      "Brought idea to production in 13 months",
+      "Decreased lead time for changes from (4 weeks to less than 1 hour)",
+      "Increased Deployment Frequency from (1 deployment a month) to (multiple deploys a day)",
+      "Time to restore a service decreased from (2 weeks to less than 1hour)",
     ],
     skills: ["React", "TypeScript", "Testing"],
     date: "February 2023 - Present",
@@ -35,7 +35,7 @@ const cards: card[] = [
     companyName: "Ox Construction LLc",
     jobTitle: "Subcontractor",
     texts: [
-      "Became strongly proficient in multiple trades including (electrical, roofing, exteriors, and home improvement).",
+      "Became strongly proficient in multiple trades including (electrical, roofing, exteriors, and home improvement)",
     ],
     skills: ["Constant Learning", "Continuous Improvement"],
     date: "August 2020 - May 2021",
@@ -44,7 +44,7 @@ const cards: card[] = [
     companyName: "Olive Garden & Sunset Grill",
     jobTitle: "Server",
     texts: [
-      "Developed my skills by working closely with team members in a highly collaborative environment.",
+      "Developed my skills by working closely with team members in a highly collaborative environment",
     ],
     skills: ["Teamwork", "Collaboration"],
     date: "April 2018 - February 2023",

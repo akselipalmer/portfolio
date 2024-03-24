@@ -1,16 +1,16 @@
 import { Card, CardBody, CardHeader, Tab, Tabs } from "@nextui-org/react";
 
 const scrimbaTexts: string[] = [
-  "Frontend development boot camp.",
-  "HTML, CSS, JavaScript, React, and (more...).",
-  "Code reviews and feedback sessions.",
-  "70+ hours of tutorials, coding challenges, and real-world projects.",
+  "Frontend development boot camp",
+  "HTML, CSS, JavaScript, React, and (more...)",
+  "Code reviews and feedback sessions",
+  "70+ hours of tutorials, coding challenges, and real-world projects",
 ];
 
 const frontEndMastersTexts: string[] = [
-  "Expanding my knowledge of technologies I use.",
-  "Growing my language base.",
-  "Keeping up with best practices.",
+  "Expanding my knowledge of technologies I use",
+  "Growing my language base",
+  "Keeping up with best practices",
 ];
 
 export default function Education(): JSX.Element {
