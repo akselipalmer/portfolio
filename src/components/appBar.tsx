@@ -1,32 +1,11 @@
-import { Button, Navbar, NavbarContent, NavbarItem } from "@nextui-org/react";
+import { Navbar, NavbarBrand } from "@nextui-org/react";
 
-export default function AppBar() {
+export default function AppBar(): JSX.Element {
   return (
-    <Navbar className="bg-transparent text-white absolute" isBlurred={false}>
-      <NavbarContent justify="end">
-        <NavbarItem>
-          <Button
-            radius="none"
-            variant="light"
-            color="default"
-            className="text-white font-medium"
-            size="lg"
-          >
-            About
-          </Button>
-        </NavbarItem>
-        <NavbarItem>
-          <Button
-            radius="none"
-            variant="light"
-            color="default"
-            className="text-white font-medium"
-            size="lg"
-          >
-            Contact
-          </Button>
-        </NavbarItem>
-      </NavbarContent>
+    <Navbar shouldHideOnScroll>
+      <NavbarBrand>
+        <p className="text-xl ">Akseli Palmer</p>
+      </NavbarBrand>
     </Navbar>
   );
 }

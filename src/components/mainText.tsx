@@ -1,7 +1,12 @@
-export default function MainText() {
+export default function MainText(): JSX.Element {
   return (
-    <p className="text-7xl font-bold text-yellow-200 lg:text-purple-600 max-w-60 lg:-translate-x-1/3 lg:row-start-3 mb-10 lg:mb-0">
-      Hello I'm Akseli Palmer
-    </p>
+    <div>
+      <h1 className=" text-6xl font-semibold">Hello I'm Akseli Palmer </h1>
+      <h2 className="text-lg mt-5 font-semibold  ">
+        I'm Frontend Developer with experience leading: Building / Shipping /
+        Maintaining a production SaaS application for a startup. (React,
+        TypeScript)
+      </h2>
+    </div>
   );
 }
