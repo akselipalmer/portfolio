@@ -1,6 +1,7 @@
-import { Button, Link, Snippet } from "@nextui-org/react";
+import { Button, Link } from "@nextui-org/react";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
+import Email from "./email";
 
 const links: { href: string; anchorIcon: JSX.Element; label: string }[] = [
   {
@@ -17,7 +18,7 @@ const links: { href: string; anchorIcon: JSX.Element; label: string }[] = [
 
 export default function Links(): JSX.Element {
   return (
-    <div className="flex gap-1 flex-wrap ">
+    <div className="flex gap-1 flex-wrap">
       {links.map(({ href, anchorIcon, label }) => (
         <Button
           as={Link}
@@ -32,9 +33,7 @@ export default function Links(): JSX.Element {
           {label}
         </Button>
       ))}
-      <Snippet symbol="Contact:" size="md" className="bg-transparent ">
-        akseli@toddsden.com
-      </Snippet>
+      <Email />
     </div>
   );
 }
