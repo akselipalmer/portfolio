@@ -4,6 +4,7 @@ import MainText from "./components/mainText";
 import { Fragment } from "react/jsx-runtime";
 import AppBar from "./components/appBar";
 import Education from "./components/education";
+import Links from "./components/links";
 
 export default function HireMe(): JSX.Element {
   return (
@@ -12,6 +13,7 @@ export default function HireMe(): JSX.Element {
       <div className="h-full w-full px-5 lg:px-20 py-5 ">
         <MainText />
         <div className="flex  flex-col gap-3 mt-6">
+          <Links />
           <Header />
           <JobHistory />
           <Education />
