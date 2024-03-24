@@ -14,7 +14,7 @@ import JobCard from "./jobCard";
 import { useState } from "react";
 
 export default function JobHistory(): JSX.Element {
-  const [selectedKeys, setSelectedKeys] = useState<Selection>(new Set(["2"]));
+  const [selectedKeys, setSelectedKeys] = useState<Selection>(new Set(["1"]));
 
   return (
     <div>
@@ -53,7 +53,7 @@ export default function JobHistory(): JSX.Element {
                 </TableCell>
               </TableRow>
               <TableRow key="3">
-                <TableCell>Serve</TableCell>
+                <TableCell>Server</TableCell>
                 <TableCell>Olive Garden & Sunset Grill</TableCell>
                 <TableCell className="hidden md:flex">
                   Apr 2018 - Feb 2023
@@ -61,7 +61,7 @@ export default function JobHistory(): JSX.Element {
               </TableRow>
             </TableBody>
           </Table>
-          <JobCard />
+          <JobCard currentCard={Array.from(selectedKeys)[0]} />
         </CardBody>
       </Card>
     </div>
