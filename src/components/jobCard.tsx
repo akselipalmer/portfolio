@@ -14,6 +14,7 @@ type card = {
   companyName: string;
   jobTitle: string;
   texts: string[];
+  date?: string;
   skills?: string[];
 };
 
@@ -28,6 +29,7 @@ const cards: card[] = [
       "Time to restore a service decreased from (2 weeks to less than 1hour).",
     ],
     skills: ["React", "TypeScript", "Testing"],
+    date: "February 2023 - Present",
   },
   {
     companyName: "Ox Construction LLc",
@@ -36,6 +38,7 @@ const cards: card[] = [
       "Became strongly proficient in multiple trades including (electrical, roofing, exteriors, and home improvement).",
     ],
     skills: ["Constant Learning", "Continuous Improvement"],
+    date: "August 2020 - May 2021",
   },
   {
     companyName: "Olive Garden & Sunset Grill",
@@ -44,6 +47,7 @@ const cards: card[] = [
       "Developed my skills by working closely with team members in a highly collaborative environment.",
     ],
     skills: ["Teamwork", "Collaboration"],
+    date: "April 2018 - February 2023",
   },
 ];
 
@@ -68,21 +72,22 @@ export default function JobCard({ currentCard }: JobCardProps): JSX.Element {
       ? cards[0]
       : cards[getValueAsNumber(currentCard) - 1];
 
-  const { companyName, jobTitle, texts, skills } = value;
+  const { companyName, jobTitle, texts, skills, date } = value;
 
   return (
     <Card className="mt-2  " isBlurred={true}>
       <CardHeader>
         <div className="flex flex-col">
           <p className="text-xl ">{jobTitle}</p>
-          <p className="text-medium tracking-tight text-default-500  ">
+          <p className="text-medium tracking-tight text-default-600 font-semibold">
             {companyName}
+            <span className=" text-sm text-default-500"> - {date}</span>
           </p>
         </div>
       </CardHeader>
       <Divider />
       <CardBody>
-        <div className="flex flex-col flex-wrap">
+        <div className="flex flex-col flex-wrap gap-1">
           {texts.map((text) => (
             <p key={text} className="text-md font-semibold">
               {text}
