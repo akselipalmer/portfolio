@@ -1,15 +1,15 @@
 import { Card, CardBody, CardHeader, Tab, Tabs } from "@nextui-org/react";
 
 const scrimbaTexts: string[] = [
-  "Completed an intensive software engineering boot camp focused on front end web development.",
-  "Acquired practical skills in front-end technologies such as HTML, CSS, and JavaScript, along with modern frameworks like React.",
-  "Participated in regular code reviews and feedback sessions to enhance coding skills and best practices.",
-  "Completed over 70 hours of top-notch tutorials, hundreds of coding challenges, and dozens of real-world projects.",
+  "Frontend development boot camp.",
+  "HTML, CSS, JavaScript, React, and (more...).",
+  "Code reviews and feedback sessions.",
+  "70+ hours of tutorials, coding challenges, and real-world projects.",
 ];
 
 const frontEndMastersTexts: string[] = [
-  "I am actively expanding my knowledge of technologies that I’m already familiar with.",
-  "As well as always growing my language base.",
+  "Expanding my knowledge of technologies I use.",
+  "Growing my language base.",
   "Keeping up with best practices.",
 ];
 

@@ -87,7 +87,7 @@ export default function JobCard({ currentCard }: JobCardProps): JSX.Element {
       </CardHeader>
       <Divider />
       <CardBody>
-        <div className="flex flex-col flex-wrap gap-1">
+        <div className="flex flex-col flex-wrap gap-2">
           {texts.map((text) => (
             <p key={text} className="text-md font-semibold">
               {text}
